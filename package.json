@@ -1,6 +1,6 @@
 {
   "name": "template-build-lib",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A template of building configs for js library projects. (Type: template-build)",
   "keywords": [
     "zp-module",
