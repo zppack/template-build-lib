@@ -1,0 +1,8 @@
+# TOML v1.0
+# Variables will ask to input
+
+zpvars = [
+  { type = 'list', name = 'platform', message = 'Which platform are you working with?', choices = ['node', 'browser', 'both'] },
+  { name = 'tool', message = 'Which build tool would you like to use?', choices = ['babel', 'rollup'] },
+  { name = 'dist', message = "What's your production directory?", default = 'dist' },
+]

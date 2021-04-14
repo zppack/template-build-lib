@@ -1,0 +1,32 @@
+{
+  "main": "{{dist}}/index.js",
+  "module": "{{dist}}/index.ejs",
+  "sideEffects": false,
+  "files": [
+    "{{dist}}"
+  ],
+  "bin": {},
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "babel src -d {{dist}}",
+    "clean": "rimraf {{dist}}",
+    "prepare": "npm run build",
+    "release": "standard-version && npm publish --access public",
+    "release:first": "standard-version --first-release && npm publish --access public",
+    "postrelease": "git push && git push origin --tags",
+    "postrelease:first": "git push -u origin master && git push origin --tags",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "rimraf": "^3.0.2",
+    "standard-version": "^9.1.1"
+  }
+}
