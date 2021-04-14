@@ -3,7 +3,7 @@
 
 zpvars = [
   { type = 'list', name = 'platform', message = 'Which platform are you working with?', choices = ['node', 'browser', 'both'] },
-  { name = 'tool', message = 'Which build tool would you like to use?', choices = ['babel', 'rollup'] },
+  { type = 'list', name = 'tool', message = 'Which build tool would you like to use?', choices = ['babel', 'rollup'] },
   { type = 'confirm', name = 'eslint', message = 'Need eslint?' },
   { name = 'dist', message = "What's your production directory?", default = 'dist' },
 ]
