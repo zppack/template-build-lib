@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.4](https://github.com/zppack/template-build-lib/compare/v1.1.3...v1.1.4) (2021-04-21)
+
+
+### Refactors
+
+* change interpolation ([8064166](https://github.com/zppack/template-build-lib/commit/80641665318c40dc1c142360667b834d88c45927))
+
 ### [1.1.3](https://github.com/zppack/template-build-lib/compare/v1.1.2...v1.1.3) (2021-04-14)
 
 ### [1.1.2](https://github.com/zppack/template-build-lib/compare/v1.1.1...v1.1.2) (2021-04-14)
