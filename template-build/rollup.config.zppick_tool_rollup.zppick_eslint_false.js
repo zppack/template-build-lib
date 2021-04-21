@@ -5,10 +5,10 @@ import { terser } from 'rollup-plugin-terser';
 export default [{
   input: 'src/index.js',
   output: [{
-    file: '{{dist}}/index.js',
+    file: '{{{dist}}}/index.js',
     format: 'cjs',
   }, {
-    file: '{{dist}}/index.ejs',
+    file: '{{{dist}}}/index.ejs',
     format: 'es',
   }], // you can remove one of these two output configs if you like
   external: [], // external node modules

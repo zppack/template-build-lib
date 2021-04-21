@@ -1,15 +1,15 @@
 {
-  "main": "{{dist}}/index.js",
-  "module": "{{dist}}/index.ejs",
+  "main": "{{{dist}}}/index.js",
+  "module": "{{{dist}}}/index.ejs",
   "sideEffects": false,
   "files": [
-    "{{dist}}"
+    "{{{dist}}}"
   ],
   "bin": {},
   "scripts": {
     "prebuild": "npm run clean",
-    "build": "babel src -d {{dist}}",
-    "clean": "rimraf {{dist}}",
+    "build": "babel src -d {{{dist}}}",
+    "clean": "rimraf {{{dist}}}",
     "prepare": "npm run build",
     "release": "standard-version && npm publish --access public",
     "release:first": "standard-version --first-release && npm publish --access public",
